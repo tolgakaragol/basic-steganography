@@ -8,5 +8,18 @@
             "email": "tolgakaragol@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "BasicSteganography\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BasicSteganographyTest\\": "tests"
+        }
+    }
 }
