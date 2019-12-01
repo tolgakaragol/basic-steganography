@@ -1,0 +1,12 @@
+{
+    "name": "tolgakaragol/basic-steganography",
+    "description": "Easy to use image based steganography project.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "tolgakaragol",
+            "email": "tolgakaragol@gmail.com"
+        }
+    ],
+    "require": {}
+}
