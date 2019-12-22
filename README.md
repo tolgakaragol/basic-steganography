@@ -26,7 +26,7 @@ Simple encode & decode image with secret data using php.
  Encode command
 
  
-    php application steganog:encode -s "it works!!!" -p tests/data/evil_morty.png
+    php application steganog:encode -s "it works" -p tests/data/evil_morty.png
     
 
 Decode command
