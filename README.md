@@ -1,7 +1,5 @@
 # Basic Steganography
-Simple encode & decode image with secret data using php.
-
-As the project name it will be very simple. But it can be extendable for new encoding-decoding algorithm.
+Simple encode & decode image with secret data using php. 
 
 ## Usage
  
@@ -9,26 +7,31 @@ As the project name it will be very simple. But it can be extendable for new enc
  
  Easy way
      
-     $steganog = new BacicSteganog();
+     $steganog = new Bacic();
      $steganog->encode('SECRET DATA', 'image_path.png'); // saves image on same path.
     
- To save encoded image on diffrent path.
+ To save encoded image on different path.
  
      $steganog->encode('SECRET DATA', 'image_path.png', 'new_image_path.png');
-     
-     
- Choosing encode algorithm on creating object or using setter method. 
     
-    $steganog = new BacicSteganog(SteganographyAlgorithm::BASIC);
-    
-    $steganog->setAlgorithm(SteganographyAlgorithm::CUSTOM_ALGORITHM);
     
  #### Decode
-    $steganog = new BacicSteganog();
+    $steganog = new Basic();
     $secret = $steganog->decode('image_path.png');
-    
-or you may want change decode algorithm.
-    
-    $secret = $steganog->decode('image_path.png', SteganographyAlgorithm::CUSTOM_ALGORITHM);
+   
+   --
+   
+ ### On CLI
+ 
+ Encode command
 
+ 
+    php application steganog:encode -s "it works!!!" -p tests/data/evil_morty.png
+    
+
+Decode command
+    
+    php application steganog:decode -p tests/data/evil_morty.png
+   
+    
  
